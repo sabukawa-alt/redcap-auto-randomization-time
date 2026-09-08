@@ -1,3 +1,5 @@
+[日本語版はこちら](README.ja.md)
+
 # Auto Randomization Time
 
 REDCap external module that automatically saves the randomization date/time
@@ -9,7 +11,7 @@ not just the manual Randomize button.
 - Works with both the manual "Randomize" button and automatic
   (real-time trigger) randomization
 - Choose the date/time format (with or without time, with or without seconds)
-- Choose which event the destination field belongs to (for longitudinal projects)
+- Choose which event the destination field belongs to
 
 ## Installation
 1. Clone this repo into `<redcap-root>/modules/auto_randomization_time_v1.0.0`
@@ -18,15 +20,17 @@ not just the manual Randomize button.
 4. Configure the module settings:
    - **Destination field**: the text field where the randomization date/time will be saved
    - **Date/time format**: match this with the field's Text Validation setting
-   - **Event** (longitudinal projects only): the event where the destination field lives
+   - **Event**: the event where the destination field lives
 
-## Requirements
+## Notes
 - REDCap's built-in Randomization module must be enabled on the project
 - The destination field should have **no other action tags** (e.g. @DEFAULT,
   @SETVALUE, @CALCTEXT) that could conflict with this module's save
+- We recommend setting **@READONLY** or **@HIDDEN** on the destination field
+  to prevent it from being edited manually
 
 ## Authors
-- Shoco&Aco&Coji
+- Shoco & Aco & Coji
 
 ## License
 MIT
