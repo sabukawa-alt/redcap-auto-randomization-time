@@ -1,0 +1,38 @@
+{
+    "name": "Auto Randomization Time",
+    "namespace": "JuntendoCRC\\AutoRandomizationTime",
+    "description": "ランダム化が行われた日時を、指定したテキストフィールドに自動的に保存します。",
+    "authors": [
+        {
+            "name": "Shoko F Aco",
+            "email": "sabukawa@juntendo.ac.jp",
+            "institution": "Juntendo University"
+        }
+    ],
+    "framework-version": 14,
+    "project-settings": [
+        {
+            "key": "rand-time-field",
+            "name": "ランダム化日時を保存したいフィールド名（変数名）を選んでください",
+            "type": "field-list",
+            "required": true
+        },
+        {
+            "key": "rand-time-format",
+            "name": "保存する日時の形式を選んでください（フィールドのText Validationと合わせてください）",
+            "type": "dropdown",
+            "choices": [
+                { "value": "Y-m-d H:i:s", "name": "Datetime and seconds (Y-M-D H:M:S)" },
+                { "value": "Y-m-d H:i",   "name": "Datetime (Y-M-D H:M)" },
+                { "value": "Y-m-d",       "name": "Date (Y-M-D)" }
+            ],
+            "required": true
+        },
+        {
+            "key": "rand-time-event",
+            "name": "保存先フィールドがあるイベントを選んでください（縦断的プロジェクトのみ。単一イベントの場合は空欄のままでOK）",
+            "type": "event-list",
+            "required": false
+        }
+    ]
+}
