@@ -26,7 +26,7 @@ not just the manual Randomize button.
   @SETVALUE, @CALCTEXT) that could conflict with this module's save
 
 ## Authors
-- Shoco&Aco&coji
+- Shoco&Aco&Coji
 
 ## License
 MIT
