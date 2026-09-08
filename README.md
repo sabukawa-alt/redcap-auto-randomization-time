@@ -26,7 +26,7 @@ not just the manual Randomize button.
   @SETVALUE, @CALCTEXT) that could conflict with this module's save
 
 ## Authors
-- Shoko F Aco — Juntendo University (sabukawa@juntendo.ac.jp)
+- Shoco&Aco&coji
 
 ## License
 MIT
